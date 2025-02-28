@@ -19,19 +19,23 @@ class CustomAppBar extends StatelessWidget {
 
 /******  4ce675c4-fc96-4172-8672-b8e3b30b86fd  *******/
   Widget build(BuildContext context) {
-    return AppBar(
-      title: Text(
-        title,
-        style: getSemiBoldStyle(
-            color: ColorManager.primary, fontSize: FontSize.s24),
-      ),
-      centerTitle: true,
-      leading: IconButton(
-        icon: const Icon(
-          Icons.arrow_back_ios,
-          color: ColorManager.primary,
+    return Padding(
+      padding: const EdgeInsets.all(0),
+      child: AppBar(
+        
+        title: Text(
+          title,
+          style: getSemiBoldStyle(
+              color: ColorManager.primary, fontSize: FontSize.s24),
         ),
-        onPressed: onPressed,
+        centerTitle: true,
+        leading: IconButton(
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: ColorManager.primary,
+          ),
+          onPressed: onPressed,
+        ),
       ),
     );
   }

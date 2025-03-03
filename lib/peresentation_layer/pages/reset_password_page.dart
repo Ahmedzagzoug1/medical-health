@@ -32,53 +32,56 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
             Navigator.pop(context);
           },
         ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-             Text(StringsManager.longString
-          ,
-          style: getRegularStyle(color: ColorManager.black2),
-        ),
-        Text('Password',
-            style: getBoldtStyle(color: ColorManager.black, fontSize: 20)),
-        const SizedBox(
-          height: 10,
-        ),
-        CustomTextField(
-          hint: StringsManager.passwordHint,
-          isPassword: isVaisiable,
-          keyboardType: TextInputType.visiblePassword,
-          suffixIcon: _getSuffixIcon(),
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        Text(
-          'Confirm Password',
-          style: getBoldtStyle(color: ColorManager.black, fontSize: 20),
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        CustomTextField(
-          hint: StringsManager.passwordHint,
-          isPassword: isVaisiable,
-          suffixIcon: _getSuffixIcon(),
-          keyboardType: TextInputType.visiblePassword,
-        ),
-        const SizedBox(
-          height: 10,
-        ),
-        SizedBox(
-          width: 500,
-          child: CustomButton(
-            title: 'Create New Password',
-            onTap: () {},
-            color: ColorManager.white,
-            backgroundColor: ColorManager.primary,
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+               Text(StringsManager.longString
+            ,
+            style: getRegularStyle(color: ColorManager.black2),
           ),
-        ),
-          ],
+          Text('Password',
+              style: getBoldtStyle(color: ColorManager.black, fontSize: 20)),
+          const SizedBox(
+            height: 10,
+          ),
+          CustomTextField(
+            hint: StringsManager.passwordHint,
+            isPassword: isVaisiable,
+            keyboardType: TextInputType.visiblePassword,
+            suffixIcon: _getSuffixIcon(),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          Text(
+            'Confirm Password',
+            style: getBoldtStyle(color: ColorManager.black, fontSize: 20),
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          CustomTextField(
+            hint: StringsManager.passwordHint,
+            isPassword: isVaisiable,
+            suffixIcon: _getSuffixIcon(),
+            keyboardType: TextInputType.visiblePassword,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+          SizedBox(
+            width: 500,
+            child: CustomButton(
+              title: 'Create New Password',
+              onTap: () {},
+              color: ColorManager.white,
+              backgroundColor: ColorManager.primary,
+            ),
+          ),
+            ],
+          ),
         )
        
       ]),

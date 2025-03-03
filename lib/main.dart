@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:medical_health_app/peresentation_layer/resources/routes_manager.dart';
-
+late  Size   screenSize;
 void main() {
   runApp(const MyApp());
 }

@@ -10,13 +10,15 @@ class CustomRoundedImage extends StatelessWidget {
     return InkWell(
       onTap: () {},
       child: Container(
-        width: 80,
-        height: 80,
+        width: 60,
+        height: 60,
         decoration:const BoxDecoration(
           shape: BoxShape.circle,
+
           color: ColorManager.blue2,
         ),
-        child:Image.asset( image,height: 100,width: 100,) )
+        child:Padding(padding: const EdgeInsets.all(8.0),child: Image.asset( image,height: 30,width: 30,) )
+      )
     );
   }
 }

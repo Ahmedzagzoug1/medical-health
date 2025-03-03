@@ -9,15 +9,7 @@ class CustomAppBar extends StatelessWidget {
    CustomAppBar({super.key, required this.title, required this.onPressed});
 
   @override
-/*************  ✨ Codeium Command ⭐  *************/
-  /// Builds an [AppBar] widget with a centered title and a back button.
-  ///
-  /// The title of the app bar is displayed using a semi-bold style with a primary color.
-  /// The leading icon is an arrow pointing back, also styled with the primary color.
-  ///
-  /// [context] is the build context in which the widget is built.
 
-/******  4ce675c4-fc96-4172-8672-b8e3b30b86fd  *******/
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(0),
@@ -29,12 +21,15 @@ class CustomAppBar extends StatelessWidget {
               color: ColorManager.primary, fontSize: FontSize.s24),
         ),
         centerTitle: true,
-        leading: IconButton(
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: ColorManager.primary,
+        leading: Padding(
+          padding: const EdgeInsets.only(left: 8.0),
+          child: IconButton(
+            icon: const Icon(
+              Icons.arrow_back_ios,
+              color: ColorManager.primary,
+            ),
+            onPressed: onPressed,
           ),
-          onPressed: onPressed,
         ),
       ),
     );

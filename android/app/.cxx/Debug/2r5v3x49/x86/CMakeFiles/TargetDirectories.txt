@@ -1,0 +1,2 @@
+E:/sample/final_projects/medical_health_app/android/app/.cxx/Debug/2r5v3x49/x86/CMakeFiles/edit_cache.dir
+E:/sample/final_projects/medical_health_app/android/app/.cxx/Debug/2r5v3x49/x86/CMakeFiles/rebuild_cache.dir

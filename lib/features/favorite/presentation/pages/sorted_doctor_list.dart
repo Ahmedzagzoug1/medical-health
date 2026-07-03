@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/widgets/doctor_item.dart';
+import 'package:medical_health_app/features/favorite/presentation/widgets/doctor_item.dart';
 
 class SortedDoctorList extends StatelessWidget {
   const SortedDoctorList({super.key});

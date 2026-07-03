@@ -6,7 +6,7 @@ import 'package:medical_health_app/core/resources/constants_manager.dart';
 import 'package:medical_health_app/core/resources/routes_manager.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_health_app/favorite_bloc_observer.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/controller/cubits/pages_cubit/pages_cubit.dart';
+import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_cubit.dart';
 
 late Size screenSize;
 void main() {

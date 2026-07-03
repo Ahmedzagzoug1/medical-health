@@ -1,8 +1,8 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/controller/cubits/pages_cubit/pages_cubit.dart';
+import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_cubit.dart';
 
 import 'package:bloc/bloc.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/controller/cubits/pages_cubit/pages_states.dart';
+import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_states.dart';
 
 class FavoriteBlocObserver extends BlocObserver {
   @override

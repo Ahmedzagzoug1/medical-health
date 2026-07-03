@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/widgets/rated_item.dart';
+import 'package:medical_health_app/features/favorite/presentation/widgets/rated_item.dart';
 
 class RatedPage extends StatelessWidget {
   const RatedPage({super.key});

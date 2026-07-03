@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/widgets/custom_expansion_list.dart';
+import 'package:medical_health_app/features/favorite/presentation/widgets/custom_expansion_list.dart';
 
 class FavoriteServicesList extends StatelessWidget {
   const FavoriteServicesList({super.key});

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:medical_health_app/core/resources/assets_manager.dart';
 import 'package:medical_health_app/core/resources/color_manager.dart';
-import 'package:medical_health_app/features/home/presentation_layer/widgets/custom_appbar.dart' show CustomAppBar;
-import 'package:medical_health_app/features/home/presentation_layer/widgets/custom_search_widget.dart';
-import 'package:medical_health_app/features/home/presentation_layer/widgets/custom_time_line.dart';
-import 'package:medical_health_app/features/home/presentation_layer/widgets/list_view_item.dart';
+import 'package:medical_health_app/features/home/presentation/widgets/custom_appbar.dart' show CustomAppBar;
+import 'package:medical_health_app/features/home/presentation/widgets/custom_search_widget.dart';
+import 'package:medical_health_app/features/home/presentation/widgets/custom_time_line.dart';
+import 'package:medical_health_app/features/home/presentation/widgets/list_view_item.dart';
 import 'package:medical_health_app/main.dart';
 
 class HomePage extends StatelessWidget {

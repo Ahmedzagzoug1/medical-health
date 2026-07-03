@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:medical_health_app/features/auth/login_page.dart';
-import 'package:medical_health_app/features/auth/reset_password_page.dart';
-import 'package:medical_health_app/features/auth/sign_up_page.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/favorite_page.dart';
-import 'package:medical_health_app/features/home/presentation_layer/pages/home_page.dart';
-import 'package:medical_health_app/features/wolcome/presentation_layer/pages/welcome_page.dart';
+import 'package:medical_health_app/features/auth/presentation/pages/login_page.dart';
+import 'package:medical_health_app/features/auth/presentation/pages/reset_password_page.dart';
+import 'package:medical_health_app/features/auth/presentation/pages/sign_up_page.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/favorite_page.dart';
+import 'package:medical_health_app/features/home/presentation/pages/home_page.dart';
+import 'package:medical_health_app/features/welcome/view/pages/welcome_page.dart';
 
 class Routes {
   static const String loginRoute = "/login";

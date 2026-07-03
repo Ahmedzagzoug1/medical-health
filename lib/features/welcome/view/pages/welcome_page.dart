@@ -6,7 +6,7 @@ import 'package:medical_health_app/core/resources/routes_manager.dart';
 import 'package:medical_health_app/core/resources/strings_manager.dart';
 import 'package:medical_health_app/core/resources/style_manager.dart';
 import 'package:medical_health_app/core/shared_widgets/custom_button.dart';
-import 'package:medical_health_app/features/wolcome/presentation_layer/widgets/custom_skin_first.dart';
+import 'package:medical_health_app/features/welcome/view/widgets/custom_skin_first.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});

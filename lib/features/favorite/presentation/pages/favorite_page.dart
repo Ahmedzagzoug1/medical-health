@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_health_app/core/resources/color_manager.dart';
 import 'package:medical_health_app/core/resources/style_manager.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/controller/cubits/pages_cubit/pages_cubit.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/controller/cubits/pages_cubit/pages_states.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/doctor_gender_list.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/favorite_doctors_list.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/favorite_list.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/rated_page.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/pages/sorted_doctor_list.dart';
-import 'package:medical_health_app/features/favorite/presentation_layer/widgets/favorite_appbar.dart';
+import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_cubit.dart';
+import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_states.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/doctor_gender_list.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/favorite_doctors_list.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/favorite_list.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/rated_page.dart';
+import 'package:medical_health_app/features/favorite/presentation/pages/sorted_doctor_list.dart';
+import 'package:medical_health_app/features/favorite/presentation/widgets/favorite_appbar.dart';
 import 'package:medical_health_app/core/shared_widgets/circle_widget.dart';
 
 class FavoritePage extends StatefulWidget {

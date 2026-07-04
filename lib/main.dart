@@ -7,12 +7,13 @@ import 'package:medical_health_app/core/resources/routes_manager.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:medical_health_app/favorite_bloc_observer.dart';
 import 'package:medical_health_app/features/favorite/presentation/bloc/pages_cubit/pages_cubit.dart';
-
+import 'core/di/service_locators.dart';
 late Size screenSize;
-void main() {
+void main()async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   Bloc.observer =  FavoriteBlocObserver();
+  await configureDependencies();
   runApp(const MyApp());
 }
 

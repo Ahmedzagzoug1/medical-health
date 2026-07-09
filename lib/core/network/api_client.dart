@@ -1,10 +1,33 @@
 import 'package:dio/dio.dart';
 import 'package:injectable/injectable.dart';
+@module
+abstract class NetworkModule {
+  @lazySingleton
+  Dio dio() {
+    return Dio(
+      BaseOptions(
+            //emulator baseUrl: 'http://10.0.2.2:3000/';
+            //real device baseUrl: 'http://192.168.1.5:3000/'
+            baseUrl: 'https://localhost:3000/',
+            connectTimeout: const Duration(seconds: 30),
+            receiveTimeout: const Duration(seconds: 30),
+            headers: {
+              'Content-Type': 'application/json',
+              'Accept': 'application/json',
+            },
+ 
+      ),
+    );
+  }
+}
+
 @lazySingleton
 class ApiClient {
   final Dio _dio;
-
-
+@factoryMethod
+factory ApiClient() {
+    return ApiClient._internal();
+  }
   ApiClient._internal()
       : _dio = Dio(
           BaseOptions(

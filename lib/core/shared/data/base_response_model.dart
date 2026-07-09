@@ -20,7 +20,6 @@ class BaseResponseModel<T> {
   ) =>
       _$BaseResponseModelFromJson(json, fromJsonT);
 
-  // التعديل هنا: جعل الـ Function تقبل T بدلاً من T? وتغيير المسمى ليتطابق مع التوليد التلقائي
   Map<String, dynamic> toJson(
     Object? Function(T value) toJsonT,
   ) =>

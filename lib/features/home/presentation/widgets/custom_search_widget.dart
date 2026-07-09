@@ -3,7 +3,7 @@ import 'package:medical_health_app/core/resources/assets_manager.dart';
 import 'package:medical_health_app/core/resources/color_manager.dart';
 import 'package:medical_health_app/core/resources/routes_manager.dart';
 import 'package:medical_health_app/core/resources/style_manager.dart';
-import 'package:medical_health_app/core/shared_widgets/custom_text_field.dart';
+import 'package:medical_health_app/core/shared/presentation/shared_widgets/custom_text_field.dart';
 
 class CustomSearchWidget extends StatelessWidget {
   const CustomSearchWidget({

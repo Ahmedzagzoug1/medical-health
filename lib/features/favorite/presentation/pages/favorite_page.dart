@@ -10,7 +10,7 @@ import 'package:medical_health_app/features/favorite/presentation/pages/favorite
 import 'package:medical_health_app/features/favorite/presentation/pages/rated_page.dart';
 import 'package:medical_health_app/features/favorite/presentation/pages/sorted_doctor_list.dart';
 import 'package:medical_health_app/features/favorite/presentation/widgets/favorite_appbar.dart';
-import 'package:medical_health_app/core/shared_widgets/circle_widget.dart';
+import 'package:medical_health_app/core/shared/presentation/shared_widgets/circle_widget.dart';
 
 class FavoritePage extends StatefulWidget {
   const FavoritePage({super.key});

@@ -3,8 +3,8 @@ import 'package:medical_health_app/core/resources/color_manager.dart';
 import 'package:medical_health_app/core/resources/strings_manager.dart';
 import 'package:medical_health_app/core/resources/style_manager.dart';
 import 'package:medical_health_app/features/auth/presentation/widgets/custom_app_bar.dart';
-import 'package:medical_health_app/core/shared_widgets/custom_button.dart';
-import 'package:medical_health_app/core/shared_widgets/custom_text_field.dart';
+import 'package:medical_health_app/core/shared/presentation/shared_widgets/custom_button.dart';
+import 'package:medical_health_app/core/shared/presentation/shared_widgets/custom_text_field.dart';
 
 class ResetPasswordPage extends StatefulWidget {
   const ResetPasswordPage({super.key});

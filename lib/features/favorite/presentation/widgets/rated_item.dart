@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:medical_health_app/core/resources/assets_manager.dart';
 import 'package:medical_health_app/core/resources/color_manager.dart';
 import 'package:medical_health_app/core/resources/style_manager.dart';
-import 'package:medical_health_app/core/shared_widgets/circle_widget.dart';
+import 'package:medical_health_app/core/shared/presentation/shared_widgets/circle_widget.dart';
 import 'package:medical_health_app/main.dart';
 
 class RatedItem extends StatelessWidget {

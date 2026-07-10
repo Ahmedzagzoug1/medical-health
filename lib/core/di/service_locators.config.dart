@@ -20,6 +20,8 @@ import 'package:medical_health_app/core/network/refresh_token_interceptors.dart'
     as _i225;
 import 'package:medical_health_app/core/storage/secure_storage_service.dart'
     as _i524;
+import 'package:medical_health_app/features/auth/data/datasources/auth_remote_data_source.dart'
+    as _i902;
 
 extension GetItInjectableX on _i174.GetIt {
   // initializes the registration of main-scope dependencies inside of GetIt
@@ -36,6 +38,9 @@ extension GetItInjectableX on _i174.GetIt {
       () => registerModule.internetConnection,
     );
     gh.lazySingleton<_i524.SecureStorage>(() => _i524.SecureStorage());
+    gh.lazySingleton<_i902.AuthRemoteDataSource>(
+      () => _i902.AuthRemoteDataSourceImpl(gh<_i56.ApiClient>()),
+    );
     gh.lazySingleton<_i225.RefreshTokenInterceptor>(
       () => _i225.RefreshTokenInterceptor(
         gh<_i361.Dio>(),

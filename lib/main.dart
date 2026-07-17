@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:medical_health_app/core/resources/constants_manager.dart';
 import 'package:medical_health_app/core/resources/routes_manager.dart';
@@ -13,6 +14,7 @@ void main()async {
   WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
   Bloc.observer =  FavoriteBlocObserver();
+ await dotenv.load(fileName: ".env");
   await configureDependencies();
   runApp(const MyApp());
 }

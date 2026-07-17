@@ -1,4 +1,10 @@
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+          
 class ApiEndpoints {
+  
+  static final String? baseUrl=dotenv.env['EMULATOR_BASE_URL']??
+  dotenv.env['REAL_DEVICE_BASE_URL'] ;
+  
   ApiEndpoints._();
 
   // ================= Authentication =================

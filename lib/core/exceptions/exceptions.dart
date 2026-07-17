@@ -30,3 +30,11 @@ class CacheException implements Exception {
   @override
   String toString() => 'CacheException: $message';
 }
+class ValidationException implements Exception {
+  final String message;
+
+  ValidationException(this.message);
+
+  @override
+  String toString() => 'CacheException: $message';
+}
